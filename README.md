@@ -5,10 +5,13 @@ everywhere else, and one click to override until you move.
 
 ## The glyph
 
-| Glyph | Meaning |
-|-------|---------|
-| 󰌾 (dimmed) | The screen locks itself after the usual idle timeout. |
-| 󰅶 (bright) | The screen stays awake until you lock it yourself. |
+| Icon | Meaning |
+|------|---------|
+| Padlock, dimmed | The screen locks itself after the usual idle timeout. |
+| Coffee cup, bright | The screen stays awake until you lock it yourself. |
+
+The two are Nerd Font `nf-md-lock` and `nf-md-coffee` — the same coffee cup
+Omarchy's own stay-awake indicator uses, so the bar keeps one vocabulary.
 
 Click to open the panel, right-click to flip the lock straight from the bar.
 The tooltip names the current network and says whether the state is the
