@@ -3,6 +3,9 @@
 Automatic screen lock that follows the network you are on. Off at home, on
 everywhere else, and one click to override until you move.
 
+![The panel on an untrusted network: locking in 15 minutes, with the switch to
+call this network home](preview.png)
+
 ## The glyph
 
 | Icon | Meaning |
