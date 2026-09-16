@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "dbarke.autolock",
+  "name": "Auto-lock",
+  "version": "1.0.0",
+  "author": "dbarke",
+  "license": "MIT",
+  "description": "Automatic screen lock that follows the network you are on: off on the networks you call home, on everywhere else, and one click to override until you move.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Auto-lock",
+    "description": "Shows whether the screen will lock itself. Joining a network applies that network's setting; marking the current network as home stops it locking there. Clicking overrides the setting until you switch networks.",
+    "category": "System",
+    "aliases": ["lock", "autolock", "idle", "stay awake", "caffeine"],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "refreshIntervalSec": 10
+    },
+    "schema": [
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Network check interval (seconds)",
+        "min": 2,
+        "max": 300,
+        "step": 1,
+        "defaultValue": 10,
+        "description": "How often to ask NetworkManager which network is active. Changes to the lock state itself are picked up immediately regardless."
+      }
+    ]
+  }
+}
