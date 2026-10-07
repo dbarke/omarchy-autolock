@@ -389,7 +389,7 @@ Panel {
           }
         }
 
-        Toggle {
+        AccentToggle {
           width: parent.width
           label: "Lock the screen automatically"
           description: root.stayAwake
@@ -422,7 +422,7 @@ Panel {
           fontFamily: root.fontFamily
         }
 
-        Toggle {
+        AccentToggle {
           width: parent.width
           visible: !!root.net
           label: "Treat this network as home"
